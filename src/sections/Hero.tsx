@@ -1,3 +1,7 @@
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { Button } from "@/components/Button";
+import { ArrowRight, Download } from "lucide-react";
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -60,6 +64,16 @@ export const Hero = () => {
             </div>
 
             {/*CTAs*/}
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <Button size="lg">
+                Contact Me <ArrowRight className="w-5 h-5" />
+              </Button>
+
+              <AnimatedBorderButton>
+                <Download className="w-5 h-5" />
+                Download CV
+              </AnimatedBorderButton>
+            </div>
           </div>
 
           {/* Right Column - Profile Image */}
