@@ -23,6 +23,16 @@
   --color-surface: #1a2329;
 } */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  all: unset;
+}
+
 :root {
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
