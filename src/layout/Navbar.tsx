@@ -34,7 +34,7 @@ export const Navbar = () => {
 
         {/* CTA Button */}
         <div className={styles.ctaButtonsContainer}>
-          <Button size="sm">Contact Me</Button>
+          <Button>Contact Me</Button>
         </div>
 
         {/* Mobile Menu Button */}

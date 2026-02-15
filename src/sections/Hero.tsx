@@ -1,6 +1,5 @@
 import styles from "./Hero.module.css";
 
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { Button } from "@/components/Button";
 import { ArrowRight, Download } from "lucide-react";
 
@@ -40,14 +39,14 @@ export const Hero = () => {
 
             {/*CTAs*/}
             <div className={styles.ctaButtonsContainer}>
-              <Button size="lg">
+              <Button>
                 Contact Me <ArrowRight className={styles.ctaButtonIcon} />
               </Button>
 
-              <AnimatedBorderButton>
+              <Button>
                 <Download className={styles.ctaButtonIcon} />
                 Download CV
-              </AnimatedBorderButton>
+              </Button>
             </div>
           </div>
 

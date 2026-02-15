@@ -1,0 +1,26 @@
+.button {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    font-weight: 500;
+
+    &:focus {
+        outline: none;
+    }
+
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+}
+
+.button > span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
