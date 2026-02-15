@@ -1,55 +1,37 @@
+import styles from "./Hero.module.css";
+
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { Button } from "@/components/Button";
 import { ArrowRight, Download } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="">
+    <section className={styles.section}>
       {/* Bg */}
-      <div className="">
-        <img src="/hero-bg.jpg" alt="Hero image" className="" />
-        <div className="" />
-      </div>
-      {/* Green Dots*/}
-      <div className="">
-        {[
-          ...Array(30).map((_item, _i) => (
-            <div
-              className=""
-              style={{
-                backgroundColor: "#20B2A6",
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-                animationDelay: `${Math.random() * 5}s`,
-              }}
-            />
-          )),
-        ]}
+      <div className={styles.background}>
+        <img src="/hero-bg.jpg" alt="Hero image" />
       </div>
 
       {/*Content*/}
-      <div className="">
-        <div className="">
+      <div className={styles.content}>
+        <div>
           {/* Left Column - Text Content */}
-          <div className="">
-            <div className="">
-              <span className="">
-                <span className="" />
-                Software Engineer • .Net React
-              </span>
-            </div>
+          <div className={styles.leftColumn}>
+            <span>
+              <span />
+              Software Engineer • .Net React
+            </span>
 
             {/*Headline*/}
-            <div className="">
-              <h1 className="">
-                Delivering <span className="">technical</span>
+            <div className={styles.headline}>
+              <h1>
+                Delivering <span className={styles.primary}>technical</span>
                 <br />
                 solutions with
                 <br />
-                <span className="">quality.</span>
+                <span className={styles.italic}>quality.</span>
               </h1>
-              <p className="">
+              <p>
                 Hi, I'm Augustin Yu - a software engineer specializing in .Net
                 and React. I build scalable, performant systems and applications
                 that users love.
@@ -57,13 +39,13 @@ export const Hero = () => {
             </div>
 
             {/*CTAs*/}
-            <div className="">
+            <div className={styles.ctaButtonsContainer}>
               <Button size="lg">
-                Contact Me <ArrowRight className="" />
+                Contact Me <ArrowRight className={styles.ctaButtonIcon} />
               </Button>
 
               <AnimatedBorderButton>
-                <Download className="" />
+                <Download className={styles.ctaButtonIcon} />
                 Download CV
               </AnimatedBorderButton>
             </div>
