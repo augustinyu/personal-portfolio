@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: transparent; */
+    padding-top: 1.25rem; /* 20px */
+    padding-bottom: 1.25rem; /* 20px */
+}
+
+.header > nav {
+    margin: 0 auto;
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > nav > a {
+    font-size: x-large;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--color-primary);
+    }
+}

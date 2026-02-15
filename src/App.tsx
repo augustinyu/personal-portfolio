@@ -8,7 +8,7 @@ import { Projects } from "@/sections/Projects";
 
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="">
       <Navbar />
       <main>
         <Hero />

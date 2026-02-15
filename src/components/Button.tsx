@@ -1,3 +1,5 @@
+import styles from "./Button.module.css";
+
 type Size = "sm" | "default" | "lg";
 
 export const Button = ({
@@ -9,21 +11,9 @@ export const Button = ({
   size?: Size;
   children: React.ReactNode;
 }) => {
-  const baseClasses =
-    "relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-primary bg-primary text-primary-foregound hover:bg-primary/90 shadow-lg shadow-primary/25";
-
-  const sizeClasses = {
-    sm: "px-4 py-2 text-sm",
-    default: "px-6 py3 text-base",
-    lg: "px-8 py-4 text-lg",
-  };
-
-  const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
   return (
-    <button className={classes}>
-      <span className="relative flex items-center justify-center gap-2">
-        {children}
-      </span>
+    <button className="">
+      <span className="">{children}</span>
     </button>
   );
 };
