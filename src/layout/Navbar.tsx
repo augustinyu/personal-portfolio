@@ -16,16 +16,16 @@ export const Navbar = () => {
 
   return (
     <header className={styles.header}>
-      <nav className="">
-        <a href="#" className="">
-          AY<span className="">.</span>
+      <nav>
+        <a href="#">
+          AY<span>.</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="">
-          <div className="">
+        <div className={styles.desktopNav}>
+          <div>
             {navLinks.map((link, index) => (
-              <a href={link.href} key={index} className="">
+              <a href={link.href} key={index}>
                 {link.label}
               </a>
             ))}
@@ -33,13 +33,13 @@ export const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="">
+        <div className={styles.ctaButtonsContainer}>
           <Button size="sm">Contact Me</Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className=""
+          className={styles.mobileMenuButton}
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -48,10 +48,10 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="">
-          <div className="">
+        <div className={styles.mobileMenu}>
+          <div>
             {navLinks.map((link, index) => (
-              <a href={link.href} key={index} className="">
+              <a href={link.href} key={index}>
                 {link.label}
               </a>
             ))}

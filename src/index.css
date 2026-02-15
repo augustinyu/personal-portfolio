@@ -36,6 +36,10 @@
   --color-foreground: #f0f2f5;
 
   --color-primary: #20b2a6;
+
+  --color-muted-foreground: #7a8491;
+
+  --color-surface: #1a2329;
 }
 
 body {
