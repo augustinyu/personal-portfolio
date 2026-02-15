@@ -1,3 +1,5 @@
+import styles from "./App.module.css";
+
 import { Navbar } from "@/layout/Navbar";
 import { Hero } from "@/sections/Hero";
 import { Experience } from "@/sections/Experience";
@@ -8,7 +10,7 @@ import { Projects } from "@/sections/Projects";
 
 function App() {
   return (
-    <div className="">
+    <div className={styles.app}>
       <Navbar />
       <main>
         <Hero />
