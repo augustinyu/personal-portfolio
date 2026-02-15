@@ -78,12 +78,14 @@
 }
 
 .headline p {
+    margin-top: 1rem;
     font-size: large;
     color: var(--color-muted-foreground);
     max-width: 32rem; /* 512px */
 }
 
 .ctaButtonsContainer {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
